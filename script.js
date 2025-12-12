@@ -538,3 +538,14 @@ document.addEventListener("DOMContentLoaded", () => {
   router.showPage("home");
 });
 
+document.addEventListener("DOMContentLoaded", ()=> {
+  const lenis = new Lenis({
+    lerp: 0.070,
+    smoothWheel: true,
+  });
+	function raf(time) {
+		lenis.raf(time);
+		requestAnimationFrame(raf);
+	}
+	requestAnimationFrame(raf);
+});
