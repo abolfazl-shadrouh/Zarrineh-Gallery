@@ -209,6 +209,7 @@ body {
 
 .cart-icon {
   font-size: 0.85rem;
+  width: 20px;
 }
 
 .cart-count {
@@ -295,6 +296,7 @@ body {
 .slide-3{
   background-image: url(assets/hero3.png);
 }
+
 .slide.active {
   opacity: 1;
   transform: scale(1.08);
