@@ -440,7 +440,7 @@ body {
 .category-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px;
+  gap: 8px;;
 }
 
 .category-card {
@@ -448,7 +448,7 @@ body {
     radial-gradient(circle at top, #322615 0, #181018 58%);
   border-radius: var(--radius-lg);
   padding: 8px 7px;
-  text-align: right;
+  text-align: center;
   border: 1px solid rgba(212, 175, 55, 0.45);
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.7);
   display: flex;
@@ -481,12 +481,14 @@ body {
   margin: 0 0 2px;
   font-size: 0.8rem;
   color: var(--gold-soft-2);
+  font-weight: 200;
 }
 
 .category-body p {
   margin: 0;
   font-size: 0.7rem;
   color: var(--text-muted);
+  font-weight: 100;
 }
 
 /* محصولات */
