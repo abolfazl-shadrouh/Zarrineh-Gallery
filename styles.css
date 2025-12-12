@@ -47,7 +47,7 @@ body {
 }
 
 body {
-  font-family: "Vazirmatn FD", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, shabnam;
+  font-family: system-ui, "Segoe UI", sans-serif, shabnam;
   background:
     radial-gradient(circle at top, #3a3216 0, transparent 45%),
     radial-gradient(circle at bottom, #1a1824 0, transparent 50%),
