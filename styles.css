@@ -28,6 +28,16 @@
   --transition-med: 0.35s ease-out;
 }
 
+@font-face {
+  font-family: shabnam;
+  src: url("font/Shabnam.woff2") format("woff2"),
+       url("font/Shabnam.woff") format("woff"),
+       url("font/Shabnam.eot") format("eot"),
+       url("font/IranNastaliq.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   margin: 0;
@@ -37,7 +47,7 @@ body {
 }
 
 body {
-  font-family: "Vazirmatn FD", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: "Vazirmatn FD", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, shabnam;
   background:
     radial-gradient(circle at top, #3a3216 0, transparent 45%),
     radial-gradient(circle at bottom, #1a1824 0, transparent 50%),
