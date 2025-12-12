@@ -1726,6 +1726,10 @@ textarea {
   font-weight: 500;
 }
 
+.ezafe-pc {
+  display: none;
+}
+
 /* دکمه‌ها */
 .btn-primary,
 .btn-outline,
@@ -1951,6 +1955,10 @@ textarea {
 
   .main-footer {
     padding: 14px 12px 10px;
+  }
+
+  .ezafe-pc {
+    display: flex;
   }
 }
 
