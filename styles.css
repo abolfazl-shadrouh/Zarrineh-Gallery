@@ -47,7 +47,7 @@ body {
 }
 
 body {
-  font-family: system-ui, "Segoe UI", sans-serif, shabnam;
+  font-family: "Vazirmatn FD", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, shabnam;
   background:
     radial-gradient(circle at top, #3a3216 0, transparent 45%),
     radial-gradient(circle at bottom, #1a1824 0, transparent 50%),
@@ -1985,4 +1985,14 @@ textarea {
   0%{background-position:0% 50%;}
   50%{background-position:100% 50%;}
   100%{background-position:150% 50%;}
+}
+
+::selection {
+  background: #c8a064;
+  color: black;
+}
+
+::-moz-selection { 
+  background: #c8a064;
+  color: black;
 }
