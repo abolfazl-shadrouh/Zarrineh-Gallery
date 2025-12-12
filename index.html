@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>زرینه‌گالری | فروشگاه طلای لوکس</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/WebP" href="assets/logo.WebP"/>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.11/dist/lenis.css">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vazirmatn@33.003/fonts/webfonts/Vazirmatn-FD.css"/>
+
+  <script type="importmap">
+  {
+    "imports": {}
+  }
+  </script>
+</head>
+<body>
+  <div id="app">
+    <header class="main-header" role="banner">
+      <div class="header-left">
+        <button
+          class="nav-toggle"
+          aria-label="باز کردن منوی اصلی"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+        >
+          <span></span><span></span>
+        </button>
+        <a href="#home" class="logo-wrap" data-page="home" aria-label="زرینه‌گالری">
+          <div class="logo-mark" aria-hidden="true">ز</div>
+          <span class="logo-title">زرینه‌گالری</span>
+        </a>
+      </div>
+
+      <nav
+        id="main-navigation"
+        class="main-nav"
+        aria-label="ناوبری اصلی"
+      >
+        <ul>
+          <li><button type="button" data-page="home" class="nav-link active">صفحه اصلی</button></li>
+          <li><button type="button" data-page="products" class="nav-link">محصولات</button></li>
+          <li><button type="button" data-page="gallery" class="nav-link">گالری</button></li>
+          <li><button type="button" data-page="services" class="nav-link">خدمات</button></li>
+          <li><button type="button" data-page="about" class="nav-link">درباره ما</button></li>
+          <li><button type="button" data-page="contact" class="nav-link">تماس با ما</button></li>
+          <li><button type="button" data-page="cart" class="nav-link">سبد خرید</button></li>
+        </ul>
+      </nav>
+
+      <button
+        type="button"
+        class="header-cart-indicator"
+        data-page="cart"
+        aria-label="مشاهده سبد خرید"
+      >
+        <span class="cart-icon" aria-hidden="true">🛒</span>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </header>
+
+    <main class="page-container" id="main-content">
+      <!-- صفحه اصلی -->
+      <section id="home" class="page page-active" aria-labelledby="home-title">
+        <div class="hero" data-animate="fade-up">
+          <div class="hero-media">
+            <div class="hero-slider" aria-label="اسلایدر طلا و جواهر">
+              <div class="slide slide-1">
+                <div class="slide-overlay"></div>
+              </div>
+              <div class="slide slide-2">
+                <div class="slide-overlay"></div>
+              </div>
+              <div class="slide slide-3">
+                <div class="slide-overlay"></div>
+              </div>
+              <button class="slider-control slider-prev" type="button" aria-label="اسلاید قبلی">‹</button>
+              <button class="slider-control slider-next" type="button" aria-label="اسلاید بعدی">›</button>
+              <div class="slider-dots" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <div class="hero-content parallax" data-parallax-strength="15">
+            <h1 id="home-title">زرینه‌گالری؛ تجربه‌ای از اصالت، زیبایی و اعتماد.</h1>
+            <p>ما در زرینه‌گالری مجموعه‌ای از بهترین زیورآلات طلا را ارائه می‌کنیم.</p>
+            <div class="hero-badges" aria-hidden="true">
+              <span class="hero-badge">ارسال امن و بیمه شده</span>
+              <span class="hero-badge">ضمانت اصالت طلا</span>
+              <span class="hero-badge">طراحی اختصاصی</span>
+            </div>
+          </div>
+        </div>
+
+        <section class="categories" aria-label="دسته‌بندی‌های منتخب" data-animate="fade-up">
+          <div class="section-title-line">
+            <h2>دسته‌بندی‌های منتخب</h2>
+          </div>
+          <div class="category-grid">
+            <button type="button" class="category-card" data-page="products" data-category-target="ring">
+              <div class="category-icon" aria-hidden="true">❂</div>
+              <div class="category-body">
+                <h3>انگشتر طلا</h3>
+                <p>طراحی‌های ظریف و روزمره تا مدل‌های مجلسی و خاص.</p>
+              </div>
+            </button>
+            <button type="button" class="category-card" data-page="products" data-category-target="necklace">
+              <div class="category-icon" aria-hidden="true">❂</div>
+              <div class="category-body">
+                <h3>گردنبند طلا</h3>
+                <p>زنجیرهای مینیمال تا پلاک‌های لوکس و نگین‌دار.</p>
+              </div>
+            </button>
+            <button type="button" class="category-card" data-page="products" data-category-target="bracelet">
+              <div class="category-icon" aria-hidden="true">❂</div>
+              <div class="category-body">
+                <h3>دستبند طلا</h3>
+                <p>زنجیری، النگویی و اسپرت برای هر سبک و سلیقه.</p>
+              </div>
+            </button>
+          </div>
+        </section>
+
+        <section class="products-preview" aria-label="جدیدترین محصولات" data-animate="fade-up">
+          <div class="section-title-line">
+            <h2>جدیدترین محصولات</h2>
+          </div>
+          <div class="product-grid">
+            <!-- ۶ محصول نمونه -->
+            <article class="product-card" data-product-id="1" data-category="ring">
+              <button class="product-media" type="button">
+                <div
+                  class="product-image"
+                  role="img"
+                  aria-label="انگشتر طلای مینیمال"
+                ></div>
+              </button>
+              <div class="product-body">
+                <h3>انگشتر طلای مینیمال</h3>
+                <p class="product-meta">وزن: ۳ گرم | عیار ۱۸</p>
+                <p class="product-price">قیمت حدودی: ۱۲٬۵۰۰٬۰۰۰ تومان</p>
+              </div>
+              <button class="btn-primary add-to-cart" type="button">افزودن به سبد</button>
+            </article>
+
+            <article class="product-card" data-product-id="2" data-category="necklace">
+              <button class="product-media" type="button">
+                <div
+                  class="product-image"
+                  role="img"
+                  aria-label="گردنبند ظریف نگین‌دار"
+                ></div>
+              </button>
+              <div class="product-body">
+                <h3>گردنبند ظریف نگین‌دار</h3>
+                <p class="product-meta">وزن: ۴٫۵ گرم | عیار ۱۸</p>
+                <p class="product-price">قیمت حدودی: ۱۸٬۹۰۰٬۰۰۰ تومان</p>
+              </div>
+              <button class="btn-primary add-to-cart" type="button">افزودن به سبد</button>
+            </article>
+
+            <article class="product-card" data-product-id="3" data-category="bracelet">
+              <button class="product-media" type="button">
+                <div
+                  class="product-image"
+                  role="img"
+                  aria-label="دستبند زنجیری کلاسیک"
+                ></div>
+              </button>
+              <div class="product-body">
+                <h3>دستبند زنجیری کلاسیک</h3>
+                <p class="product-meta">وزن: ۶ گرم | عیار ۱۸</p>
+                <p class="product-price">قیمت حدودی: ۲۴٬۰۰۰٬۰۰۰ تومان</p>
+              </div>
+              <button class="btn-primary add-to-cart" type="button">افزودن به سبد</button>
+            </article>
+
+            <article class="product-card" data-product-id="4" data-category="earring">
+              <button class="product-media" type="button">
+                <div
+                  class="product-image"
+                  role="img"
+                  aria-label="گوشواره حلقه‌ای ظریف"
+                ></div>
+              </button>
+              <div class="product-body">
+                <h3>گوشواره حلقه‌ای ظریف</h3>
+                <p class="product-meta">وزن: ۲٫۸ گرم | عیار ۱۸</p>
+                <p class="product-price">قیمت حدودی: ۱۰٬۷۰۰٬۰۰۰ تومان</p>
+              </div>
+              <button class="btn-primary add-to-cart" type="button">افزودن به سبد</button>
+            </article>
+
+            <article class="product-card" data-product-id="5" data-category="bangle">
+              <button class="product-media" type="button">
+                <div
+                  class="product-image"
+                  role="img"
+                  aria-label="النگوی کلاسیک"
+                ></div>
+              </button>
+              <div class="product-body">
+                <h3>النگوی کلاسیک</h3>
+                <p class="product-meta">وزن: ۷ گرم | عیار ۱۸</p>
+                <p class="product-price">قیمت حدودی: ۲۷٬۵۰۰٬۰۰۰ تومان</p>
+              </div>
+              <button class="btn-primary add-to-cart" type="button">افزودن به سبد</button>
+            </article>
+
+            <article class="product-card" data-product-id="6" data-category="set">
+              <button class="product-media" type="button">
+                <div
+                  class="product-image"
+                  role="img"
+                  aria-label="نیم‌ست نگین‌دار لوکس"
+                ></div>
+              </button>
+              <div class="product-body">
+                <h3>نیم‌ست نگین‌دار لوکس</h3>
+                <p class="product-meta">وزن: ۹ گرم | عیار ۱۸</p>
+                <p class="product-price">قیمت حدودی: ۳۶٬۸۰۰٬۰۰۰ تومان</p>
+              </div>
+              <button class="btn-primary add-to-cart" type="button">افزودن به سبد</button>
+            </article>
+          </div>
+          <div class="centered-action">
+            <button class="btn-outline" type="button" data-page="products">
+              مشاهده همه محصولات
+            </button>
+          </div>
+        </section>
+      </section>
+
+      <!-- صفحه محصولات -->
+      <section id="products" class="page" aria-labelledby="products-title">
+        <div class="products-layout" data-animate="fade-up">
+          <aside class="sidebar" aria-label="فیلتر دسته‌بندی محصولات">
+            <h2>دسته‌بندی</h2>
+            <ul class="category-list" id="product-filter">
+              <li><button type="button" data-category="all" class="active">همه محصولات</button></li>
+              <li><button type="button" data-category="ring">انگشتر</button></li>
+              <li><button type="button" data-category="necklace">گردنبند</button></li>
+              <li><button type="button" data-category="earring">گوشواره</button></li>
+              <li><button type="button" data-category="bangle">النگو</button></li>
+              <li><button type="button" data-category="set">نیم‌ست</button></li>
+            </ul>
+          </aside>
+
+          <section class="products-grid-wrapper" aria-live="polite">
+            <h1 class="page-title" id="products-title">محصولات زرینه‌گالری</h1>
+            <div class="product-grid" id="products-grid">
+              <article class="product-card" data-category="ring" data-product-id="1">
+                <button class="product-media" type="button">
+                  <div
+                    class="product-image"
+                    role="img"
+                    aria-label="انگشتر طلای مینیمال"
+                  ></div>
+                </button>
+                <div class="product-body">
+                  <h3>انگشتر طلای مینیمال</h3>
+                  <p class="product-meta">وزن: ۳ گرم | عیار ۱۸</p>
+                  <p class="product-price">قیمت حدودی: ۱۲٬۵۰۰٬۰۰۰ تومان</p>
+                </div>
+                <button class="btn-primary add-to-cart" type="button">افزودن به سبد</button>
+              </article>
+
+              <article class="product-card" data-category="necklace" data-product-id="2">
+                <button class="product-media" type="button">
+                  <div
+                    class="product-image"
+                    role="img"
+                    aria-label="گردنبند ظریف نگین‌دار"
+                  ></div>
+                </button>
+                <div class="product-body">
+                  <h3>گردنبند ظریف نگین‌دار</h3>
+                  <p class="product-meta">وزن: ۴٫۵ گرم | عیار ۱۸</p>
+                  <p class="product-price">قیمت حدودی: ۱۸٬۹۰۰٬۰۰۰ تومان</p>
+                </div>
+                <button class="btn-primary add-to-cart" type="button">افزودن به سبد</button>
+              </article>
+
+              <article class="product-card" data-category="bracelet" data-product-id="3">
+                <button class="product-media" type="button">
+                  <div
+                    class="product-image"
+                    role="img"
+                    aria-label="دستبند زنجیری کلاسیک"
+                  ></div>
+                </button>
+                <div class="product-body">
+                  <h3>دستبند زنجیری کلاسیک</h3>
+                  <p class="product-meta">وزن: ۶ گرم | عیار ۱۸</p>
+                  <p class="product-price">قیمت حدودی: ۲۴٬۰۰۰٬۰۰۰ تومان</p>
+                </div>
+                <button class="btn-primary add-to-cart" type="button">افزودن به سبد</button>
+              </article>
+
+              <article class="product-card" data-category="earring" data-product-id="4">
+                <button class="product-media" type="button">
+                  <div
+                    class="product-image"
+                    role="img"
+                    aria-label="گوشواره حلقه‌ای ظریف"
+                  ></div>
+                </button>
+                <div class="product-body">
+                  <h3>گوشواره حلقه‌ای ظریف</h3>
+                  <p class="product-meta">وزن: ۲٫۸ گرم | عیار ۱۸</p>
+                  <p class="product-price">قیمت حدودی: ۱۰٬۷۰۰٬۰۰۰ تومان</p>
+                </div>
+                <button class="btn-primary add-to-cart" type="button">افزودن به سبد</button>
+              </article>
+
+              <article class="product-card" data-category="bangle" data-product-id="5">
+                <button class="product-media" type="button">
+                  <div
+                    class="product-image"
+                    role="img"
+                    aria-label="النگوی کلاسیک"
+                  ></div>
+                </button>
+                <div class="product-body">
+                  <h3>النگوی کلاسیک</h3>
+                  <p class="product-meta">وزن: ۷ گرم | عیار ۱۸</p>
+                  <p class="product-price">قیمت حدودی: ۲۷٬۵۰۰٬۰۰۰ تومان</p>
+                </div>
+                <button class="btn-primary add-to-cart" type="button">افزودن به سبد</button>
+              </article>
+
+              <article class="product-card" data-category="set" data-product-id="6">
+                <button class="product-media" type="button">
+                  <div
+                    class="product-image"
+                    role="img"
+                    aria-label="نیم‌ست نگین‌دار لوکس"
+                  ></div>
+                </button>
+                <div class="product-body">
+                  <h3>نیم‌ست نگین‌دار لوکس</h3>
+                  <p class="product-meta">وزن: ۹ گرم | عیار ۱۸</p>
+                  <p class="product-price">قیمت حدودی: ۳۶٬۸۰۰٬۰۰۰ تومان</p>
+                </div>
+                <button class="btn-primary add-to-cart" type="button">افزودن به سبد</button>
+              </article>
+
+              <article class="product-card" data-category="ring" data-product-id="7">
+                <button class="product-media" type="button">
+                  <div
+                    class="product-image"
+                    role="img"
+                    aria-label="انگشتر طرح پیچ"
+                  ></div>
+                </button>
+                <div class="product-body">
+                  <h3>انگشتر طرح پیچ</h3>
+                  <p class="product-meta">وزن: ۳٫۵ گرم | عیار ۱۸</p>
+                  <p class="product-price">قیمت حدودی: ۱۴٬۲۰۰٬۰۰۰ تومان</p>
+                </div>
+                <button class="btn-primary add-to-cart" type="button">افزودن به سبد</button>
+              </article>
+
+              <article class="product-card" data-category="necklace" data-product-id="8">
+                <button class="product-media" type="button">
+                  <div
+                    class="product-image"
+                    role="img"
+                    aria-label="گردنبند زنجیری ظریف"
+                  ></div>
+                </button>
+                <div class="product-body">
+                  <h3>گردنبند زنجیری ظریف</h3>
+                  <p class="product-meta">وزن: ۵ گرم | عیار ۱۸</p>
+                  <p class="product-price">قیمت حدودی: ۲۰٬۰۰۰٬۰۰۰ تومان</p>
+                </div>
+                <button class="btn-primary add-to-cart" type="button">افزودن به سبد</button>
+              </article>
+
+              <article class="product-card" data-category="set" data-product-id="9">
+                <button class="product-media" type="button">
+                  <div
+                    class="product-image"
+                    role="img"
+                    aria-label="نیم‌ست کلاسیک طرح گل"
+                  ></div>
+                </button>
+                <div class="product-body">
+                  <h3>نیم‌ست کلاسیک طرح گل</h3>
+                  <p class="product-meta">وزن: ۱۰ گرم | عیار ۱۸</p>
+                  <p class="product-price">قیمت حدودی: ۳۹٬۵۰۰٬۰۰۰ تومان</p>
+                </div>
+                <button class="btn-primary add-to-cart" type="button">افزودن به سبد</button>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- صفحه گالری -->
+      <section id="gallery" class="page" aria-labelledby="gallery-title">
+        <h1 class="page-title" id="gallery-title">گالری زرینه‌گالری</h1>
+        <div class="gallery-loader" aria-hidden="true">
+          <span class="loader-dot"></span>
+          <span class="loader-dot"></span>
+          <span class="loader-dot"></span>
+        </div>
+        <div class="gallery-grid" data-animate="fade-up" aria-live="polite">
+          <button class="gallery-item gallery-1" data-full="gallery-1" type="button" aria-label="نمایش تصویر طلا"></button>
+          <button class="gallery-item gallery-2" data-full="gallery-2" type="button" aria-label="نمایش تصویر طلا"></button>
+          <button class="gallery-item gallery-3" data-full="gallery-3" type="button" aria-label="نمایش تصویر طلا"></button>
+          <button class="gallery-item gallery-4" data-full="gallery-4" type="button" aria-label="نمایش تصویر طلا"></button>
+          <button class="gallery-item gallery-5" data-full="gallery-5" type="button" aria-label="نمایش تصویر طلا"></button>
+          <button class="gallery-item gallery-6" data-full="gallery-6" type="button" aria-label="نمایش تصویر طلا"></button>
+        </div>
+      </section>
+
+      <!-- صفحه خدمات -->
+      <section id="services" class="page" aria-labelledby="services-title">
+        <h1 class="page-title" id="services-title">خدمات زرینه‌گالری</h1>
+        <div class="services-grid" data-animate="fade-up">
+          <article class="service-card">
+            <h2>تعمیر و آبکاری طلا</h2>
+            <p>بازسازی، پولیش و آبکاری حرفه‌ای طلا برای درخششی دوباره و ظاهری مانند روز اول.</p>
+          </article>
+          <article class="service-card">
+            <h2>طراحی اختصاصی جواهرات</h2>
+            <p>طراحی و ساخت جواهرات اختصاصی بر اساس سلیقه شما، از ایده تا اجرای نهایی.</p>
+          </article>
+          <article class="service-card">
+            <h2>خرید و فروش طلای دست دوم</h2>
+            <p>خرید و فروش منصفانه طلای دست دوم با شفافیت کامل در وزن، عیار و قیمت.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- صفحه درباره ما -->
+      <section id="about" class="page" aria-labelledby="about-title">
+        <h1 class="page-title" id="about-title">درباره زرینه‌گالری</h1>
+        <div class="about-content" data-animate="fade-up">
+          <p>
+            زرینه‌گالری با بیش از ده سال تجربه در فروش زیورآلات طلا، همواره تلاش کرده است محصولاتی با کیفیت،
+            اصیل و متناسب با سلیقه مشتریان ارائه دهد. هدف ما ایجاد حس اعتماد و رضایت کامل برای شماست.
+          </p>
+          <p>
+            تیم ما از طراحان و مشاوران حرفه‌ای تشکیل شده که شما را در انتخاب بهترین گزینه متناسب با سبک و بودجه‌تان همراهی می‌کنند.
+          </p>
+        </div>
+      </section>
+
+      <!-- صفحه تماس با ما -->
+      <section id="contact" class="page" aria-labelledby="contact-title">
+        <h1 class="page-title" id="contact-title">تماس با زرینه‌گالری</h1>
+        <div class="contact-layout" data-animate="fade-up">
+          <form class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name">نام</label>
+              <input id="contact-name" name="name" type="text" placeholder="نام شما" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="contact-phone">شماره تماس</label>
+              <input id="contact-phone" name="phone" type="tel" placeholder="۰۹۱۲۱۲۳۴۵۶۷" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">پیام</label>
+              <textarea id="contact-message" name="message" rows="3" placeholder="متن پیام شما"></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width">ارسال پیام</button>
+            <p class="form-hint">پاسخ شما در سریع‌ترین زمان ممکن داده خواهد شد.</p>
+          </form>
+          <section class="contact-info" aria-label="اطلاعات تماس">
+            <div class="info-block">
+              <h2>اطلاعات تماس</h2>
+              <p><strong>تلفن:</strong> ۰۲۱-۱۲۳۴۵۶۷۸</p>
+              <p><strong>آدرس:</strong> تهران، خیابان مثال، پاساژ زرین، طبقه اول، واحد ۱۰</p>
+              <p><strong>ساعت کاری:</strong> همه‌روزه بجز جمعه، ۱۰ تا ۲۰</p>
+            </div>
+            <div class="map-wrapper" aria-label="نمایش نقشه">
+              <iframe
+                title="موقعیت زرینه‌گالری روی نقشه"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.146082085464!2d51.40434331526949!3d35.715298580186776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e012e9c14a4f3%3A0x1c4bdc90c515a1ef!2sTehran!5e0!3m2!1sen!2sir!4v1700000000000">
+              </iframe>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- صفحه سبد خرید -->
+      <section id="cart" class="page" aria-labelledby="cart-title">
+        <h1 class="page-title" id="cart-title">سبد خرید</h1>
+        <div class="cart-content" data-animate="fade-up">
+          <section class="cart-items" id="cart-items" aria-live="polite"></section>
+          <aside class="cart-summary" aria-label="خلاصه سبد خرید">
+            <div>
+              <div class="cart-row">
+                <span>جمع کل:</span>
+                <span id="cart-total">۰ تومان</span>
+              </div>
+            </div>
+            <div>
+              <button class="btn-disabled full-width" type="button" disabled>تکمیل خرید</button>
+              <p class="cart-note">تکمیل خرید در حال حاضر غیرفعال است.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <!-- لایت‌باکس گالری -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="نمایش تصویر گالری">
+      <button class="lightbox-close" id="lightbox-close" type="button" aria-label="بستن">×</button>
+      <div class="lightbox-image" id="lightbox-image"></div>
+    </div>
+
+    <!-- Toast پیام‌ها -->
+    <div class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- فوتر جدید و لوکس -->
+    <footer class="main-footer" role="contentinfo">
+      <div class="footer-inner">
+        <section class="footer-section footer-brand" aria-label="لوگو و معرفی کوتاه">
+          <div class="footer-logo-wrap">
+            <div class="footer-logo-mark">ز</div>
+            <div class="footer-logo-text">
+              <span class="footer-logo-title">زرینه‌گالری</span>
+              <span class="footer-logo-sub">گالری طلا و جواهرات لوکس</span>
+            </div>
+          </div>
+          <p class="footer-description">
+            در زرینه‌گالری، طلایی‌ترین لحظات زندگی خود را با اصالتی ماندگار و طراحی‌های مدرن ثبت کنید.
+          </p>
+        </section>
+
+        <nav class="footer-section footer-links" aria-label="لینک‌های سریع">
+          <h2>لینک‌های سریع</h2>
+          <ul>
+            <li><button type="button" data-page="home" class="footer-link">صفحه اصلی</button></li>
+            <li><button type="button" data-page="products" class="footer-link">محصولات</button></li>
+            <li><button type="button" data-page="gallery" class="footer-link">گالری</button></li>
+            <li><button type="button" data-page="services" class="footer-link">خدمات</button></li>
+            <li><button type="button" data-page="about" class="footer-link">درباره ما</button></li>
+            <li><button type="button" data-page="contact" class="footer-link">تماس با ما</button></li>
+          </ul>
+        </nav>
+
+        <section class="footer-section footer-contact" aria-label="اطلاعات تماس">
+          <h2>تماس با ما</h2>
+          <ul class="footer-contact-list">
+            <li>
+              <span class="footer-contact-icon" aria-hidden="true">📍</span>
+              <span>تهران، خیابان مثال، پاساژ زرین، طبقه اول، واحد ۱۰</span>
+            </li>
+            <li>
+              <span class="footer-contact-icon" aria-hidden="true">📞</span>
+              <a href="tel:02112345678">۰۲۱-۱۲۳۴۵۶۷۸</a>
+            </li>
+            <li>
+              <span class="footer-contact-icon" aria-hidden="true">⏰</span>
+              <span>همه‌روزه بجز جمعه، ۱۰ تا ۲۰</span>
+            </li>
+          </ul>
+          <div class="footer-social" aria-label="شبکه‌های اجتماعی">
+            <button type="button" class="social-icon" aria-label="اینستاگرام">
+              <span aria-hidden="true">IG</span>
+            </button>
+            <button type="button" class="social-icon" aria-label="تلگرام">
+              <span aria-hidden="true">TG</span>
+            </button>
+            <button type="button" class="social-icon" aria-label="واتساپ">
+              <span aria-hidden="true">WA</span>
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+      <p class="copyright" dir="ltr">
+        Designed & Developed by 
+        <a href="https://shadrouh.ir/" target="_blank" class="animated-name">Abolfazl Shadrouh</a>
+          </p>
+          <p>پروژه ناتمام (درحال توسئه و بهینه سازی)</p>
+      </div>
+    </footer>
+  </div>
+
+  <script type="module" src="script.js"></script>
+  <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script> 
+</body>
+</html>
+
