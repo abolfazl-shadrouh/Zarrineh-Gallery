@@ -1,6 +1,6 @@
 # 💎 Zarrineh Gallery – Luxury Gold Jewelry Store
 
-[![GitHub stars](https://img.shields.io/github/stars/abolfazl-shadrouh/zarrineh-gallery?style=social)](https://github.com/abolfazl-shadrouh/zarrineh-gallery/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/abolfazl-shadrouh/zarrineh-gallery?style=social)](https://github.com/abolfazl-shadrouh/Zarrineh-Gallery/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/abolfazl-shadrouh/zarrineh-gallery?style=social)](https://github.com/abolfazl-shadrouh/zarrineh-gallery/network)
 [![License](https://img.shields.io/github/license/abolfazl-shadrouh/zarrineh-gallery)](https://github.com/abolfazl-shadrouh/zarrineh-gallery/blob/main/LICENSE)
 
