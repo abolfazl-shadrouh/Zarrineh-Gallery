@@ -252,7 +252,12 @@ class ProductData {
       const title = card.querySelector("h3")?.textContent?.trim() || "محصول";
       const priceText = card.querySelector(".product-price")?.textContent || "";
       const match = priceText.match(/([\d٬,]+)\s*تومان/);
-      const price = match ? parseInt(match[1].replace(/[^\d]/g, ""), 10) : 0;
+      const toEnglishDigits = (str) =>
+        str.replace(/[۰-۹]/g, d => "۰۱۲۳۴۵۶۷۸۹".indexOf(d));
+
+      const price = match
+        ? parseInt(toEnglishDigits(match[1]).replace(/[^\d]/g, ""), 10)
+        : 0;
       productsData[id] = { id, title, price };
     });
   }

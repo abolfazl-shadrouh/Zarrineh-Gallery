@@ -227,6 +227,7 @@ body {
   box-shadow: var(--shadow-soft);
   position: relative;
   overflow: hidden;
+  font-weight: 100;
 }
 
 /* صفحات */
@@ -1254,7 +1255,7 @@ body {
   border: 1px solid rgba(212, 175, 55, 0.7);
   background: radial-gradient(circle at top, #f4d58a 0, #c59b2e 70%);
   color: #140d03;
-  font-size: 0.68rem;
+  font-size: 0.9rem;
   display: flex;
   align-items: center;
   justify-content: center;
