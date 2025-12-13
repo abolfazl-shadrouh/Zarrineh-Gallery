@@ -1,8 +1,8 @@
 # 💎 Zarrineh Gallery – Luxury Gold Jewelry Store
 
-[![GitHub stars](https://img.shields.io/github/stars/abolfazl-shadrouh/zarrineh-gallery?style=social)](https://github.com/abolfazl-shadrouh/Zarrineh-Gallery/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/abolfazl-shadrouh/zarrineh-gallery?style=social)](https://github.com/abolfazl-shadrouh/zarrineh-gallery/network)
-[![License](https://img.shields.io/github/license/abolfazl-shadrouh/zarrineh-gallery)](https://github.com/abolfazl-shadrouh/zarrineh-gallery/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/abolfazl-shadrouh/Zarrineh-Gallery?style=social)](https://github.com/abolfazl-shadrouh/Zarrineh-Gallery/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/abolfazl-shadrouh/Zarrineh-Gallery?style=social)](https://github.com/abolfazl-shadrouh/Zarrineh-Gallery/network)
+[![License](https://img.shields.io/github/license/abolfazl-shadrouh/Zarrineh-Gallery)](https://github.com/abolfazl-shadrouh/Zarrineh-Gallery/blob/main/LICENSE)
 
 **Welcome to Zarrineh Gallery!**  
 A modern and elegant online gallery and showcase for **luxury gold jewelry**, designed to present products, services, and brand identity with a premium look and feel. 💍  
