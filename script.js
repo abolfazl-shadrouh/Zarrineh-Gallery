@@ -355,7 +355,9 @@ class Cart {
       const minus = document.createElement("button");
       minus.className = "cart-qty-btn";
       minus.textContent = "−";
-      minus.addEventListener("click", () => this.updateQty(item.id, item.qty - 1));
+      minus.addEventListener("click", () =>
+        this.updateQty(item.id, item.qty - 1)
+      );
 
       const qty = document.createElement("span");
       qty.className = "cart-qty";
@@ -364,7 +366,9 @@ class Cart {
       const plus = document.createElement("button");
       plus.className = "cart-qty-btn";
       plus.textContent = "+";
-      plus.addEventListener("click", () => this.updateQty(item.id, item.qty + 1));
+      plus.addEventListener("click", () =>
+        this.updateQty(item.id, item.qty + 1)
+      );
 
       const remove = document.createElement("button");
       remove.className = "cart-remove";
@@ -378,7 +382,10 @@ class Cart {
     });
 
     this.totalEl.textContent = Cart.formatPrice(total);
-    this.cartCountEl.textContent = cartState.items.reduce((s, it) => s + it.qty, 0);
+    this.cartCountEl.textContent = cartState.items.reduce(
+      (s, it) => s + it.qty,
+      0
+    );
   }
 
   static formatPrice(num) {
@@ -538,14 +545,14 @@ document.addEventListener("DOMContentLoaded", () => {
   router.showPage("home");
 });
 
-document.addEventListener("DOMContentLoaded", ()=> {
+document.addEventListener("DOMContentLoaded", () => {
   const lenis = new Lenis({
-    lerp: 0.070,
+    lerp: 0.07,
     smoothWheel: true,
   });
-	function raf(time) {
-		lenis.raf(time);
-		requestAnimationFrame(raf);
-	}
-	requestAnimationFrame(raf);
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
 });

@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
   <meta charset="UTF-8" />
   <title>زرینه‌گالری | فروشگاه طلای لوکس</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="assets/logo1.png"/>
+  <link rel="icon" type="image/png" href="assets/logo1.png" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
   <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.11/dist/lenis.css">
-  
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vazirmatn@33.003/fonts/webfonts/Vazirmatn-FD.css"/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vazirmatn@33.003/fonts/webfonts/Vazirmatn-FD.css" />
 
   <script type="importmap">
   {
@@ -23,16 +22,13 @@
   }
   </script>
 </head>
+
 <body>
   <div id="app">
     <header class="main-header" role="banner">
       <div class="header-left">
-        <button
-          class="nav-toggle"
-          aria-label="باز کردن منوی اصلی"
-          aria-expanded="false"
-          aria-controls="main-navigation"
-        >
+        <button class="nav-toggle" aria-label="باز کردن منوی اصلی" aria-expanded="false"
+          aria-controls="main-navigation">
           <span></span><span></span>
         </button>
         <a href="#home" class="logo-wrap" data-page="home" aria-label="زرینه‌گالری">
@@ -40,11 +36,7 @@
         </a>
       </div>
 
-      <nav
-        id="main-navigation"
-        class="main-nav"
-        aria-label="ناوبری اصلی"
-      >
+      <nav id="main-navigation" class="main-nav" aria-label="ناوبری اصلی">
         <ul>
           <li><button type="button" data-page="home" class="nav-link active">صفحه اصلی</button></li>
           <li><button type="button" data-page="products" class="nav-link">محصولات</button></li>
@@ -55,19 +47,13 @@
         </ul>
       </nav>
 
-      <button
-        type="button"
-        class="header-cart-indicator"
-        data-page="cart"
-        aria-label="مشاهده سبد خرید"
-      >
+      <button type="button" class="header-cart-indicator" data-page="cart" aria-label="مشاهده سبد خرید">
         <span class="cart-icon" aria-hidden="true"><i class="fal fa-shopping-cart cart" aria-hidden="true"></i></span>
         <span class="cart-count" id="cart-count">0</span>
       </button>
     </header>
 
     <main class="page-container" id="main-content">
-      <!-- صفحه اصلی -->
       <section id="home" class="page page-active" aria-labelledby="home-title">
         <div class="hero" data-animate="fade-up">
           <div class="hero-media">
@@ -139,19 +125,14 @@
             <h2>جدیدترین محصولات</h2>
           </div>
           <div class="product-grid">
-            <!-- ۶ محصول نمونه -->
             <article class="product-card" data-product-id="1" data-category="ring">
               <button class="product-media" type="button">
-                <div
-                  class="product-image"
-                  data-bg="assets/product1.png"
-                  role="img"
-                  aria-label="انگشتر طلای مینیمال"
-                ></div>
+                <div class="product-image" data-bg="assets/product1.png" role="img" aria-label="انگشتر طلای مینیمال">
+                </div>
               </button>
               <div class="product-body">
                 <h3>انگشتر طلای مینیمال</h3>
-                <p class="product-meta">وزن: ۳ گرم | عیار ۱۸</p> 
+                <p class="product-meta">وزن: ۳ گرم | عیار ۱۸</p>
                 <p class="product-price">قیمت حدودی: ۵۱,۲۴۴,۰۰۰ تومان</p>
               </div>
               <button class="btn-primary add-to-cart" type="button">افزودن به سبد</button>
@@ -159,12 +140,8 @@
 
             <article class="product-card" data-product-id="2" data-category="necklace">
               <button class="product-media" type="button">
-                <div
-                  class="product-image"
-                  data-bg="assets/product2.png"
-                  role="img"
-                  aria-label="گردنبند ظریف نگین‌دار"
-                ></div>
+                <div class="product-image" data-bg="assets/product2.png" role="img" aria-label="گردنبند ظریف نگین‌دار">
+                </div>
               </button>
               <div class="product-body">
                 <h3>گردنبند ظریف نگین‌دار</h3>
@@ -176,12 +153,7 @@
 
             <article class="product-card" data-product-id="3" data-category="bracelet">
               <button class="product-media" type="button">
-                <div
-                  class="product-image"
-                  data-bg="assets/product3.png"
-                  role="img"
-                  aria-label="دستبند طلا برگ"
-                ></div>
+                <div class="product-image" data-bg="assets/product3.png" role="img" aria-label="دستبند طلا برگ"></div>
               </button>
               <div class="product-body">
                 <h3>دستبند طلا برگ</h3>
@@ -193,12 +165,8 @@
 
             <article class="product-card" data-product-id="4" data-category="earring">
               <button class="product-media" type="button">
-                <div
-                  class="product-image"
-                  data-bg="assets/product4.png"
-                  role="img"
-                  aria-label="گوشواره حلقه‌ای ظریف"
-                ></div>
+                <div class="product-image" data-bg="assets/product4.png" role="img" aria-label="گوشواره حلقه‌ای ظریف">
+                </div>
               </button>
               <div class="product-body">
                 <h3>گوشواره حلقه‌ای ظریف</h3>
@@ -210,12 +178,7 @@
 
             <article class="product-card" data-product-id="5" data-category="bangle">
               <button class="product-media" type="button">
-                <div
-                  class="product-image"
-                  data-bg="assets/product5.png"
-                  role="img"
-                  aria-label="النگوی کلاسیک"
-                ></div>
+                <div class="product-image" data-bg="assets/product5.png" role="img" aria-label="النگوی کلاسیک"></div>
               </button>
               <div class="product-body">
                 <h3>النگوی کلاسیک</h3>
@@ -227,12 +190,8 @@
 
             <article class="product-card" data-product-id="6" data-category="set">
               <button class="product-media" type="button">
-                <div
-                  class="product-image"
-                  data-bg="assets/product6.png"
-                  role="img"
-                  aria-label="نیم‌ست نگین‌دار لوکس"
-                ></div>
+                <div class="product-image" data-bg="assets/product6.png" role="img" aria-label="نیم‌ست نگین‌دار لوکس">
+                </div>
               </button>
               <div class="product-body">
                 <h3>نیم‌ست نگین‌دار لوکس</h3>
@@ -250,7 +209,6 @@
         </section>
       </section>
 
-      <!-- صفحه محصولات -->
       <section id="products" class="page" aria-labelledby="products-title">
         <div class="products-layout" data-animate="fade-up">
           <aside class="sidebar" aria-label="فیلتر دسته‌بندی محصولات">
@@ -270,12 +228,8 @@
             <div class="product-grid" id="products-grid">
               <article class="product-card" data-category="ring" data-product-id="1">
                 <button class="product-media" type="button">
-                  <div
-                    class="product-image"
-                    role="img"
-                    data-bg="assets/product1.png"
-                    aria-label="انگشتر طلای مینیمال"
-                  ></div>
+                  <div class="product-image" role="img" data-bg="assets/product1.png" aria-label="انگشتر طلای مینیمال">
+                  </div>
                 </button>
                 <div class="product-body">
                   <h3>انگشتر طلای مینیمال</h3>
@@ -287,12 +241,8 @@
 
               <article class="product-card" data-category="necklace" data-product-id="2">
                 <button class="product-media" type="button">
-                  <div
-                    class="product-image"
-                    role="img"
-                    data-bg="assets/product2.png"
-                    aria-label="گردنبند ظریف نگین‌دار"
-                  ></div>
+                  <div class="product-image" role="img" data-bg="assets/product2.png"
+                    aria-label="گردنبند ظریف نگین‌دار"></div>
                 </button>
                 <div class="product-body">
                   <h3>گردنبند ظریف نگین‌دار</h3>
@@ -304,12 +254,8 @@
 
               <article class="product-card" data-category="bracelet" data-product-id="3">
                 <button class="product-media" type="button">
-                  <div
-                    class="product-image"
-                    role="img"
-                    data-bg="assets/product3.png"
-                    aria-label="دستبند زنجیری کلاسیک"
-                  ></div>
+                  <div class="product-image" role="img" data-bg="assets/product3.png" aria-label="دستبند زنجیری کلاسیک">
+                  </div>
                 </button>
                 <div class="product-body">
                   <h3>دستبند طلای برگ</h3>
@@ -321,12 +267,8 @@
 
               <article class="product-card" data-category="earring" data-product-id="4">
                 <button class="product-media" type="button">
-                  <div
-                    class="product-image"
-                    role="img"
-                    data-bg="assets/product4.png"
-                    aria-label="گوشواره حلقه‌ای ظریف"
-                  ></div>
+                  <div class="product-image" role="img" data-bg="assets/product4.png" aria-label="گوشواره حلقه‌ای ظریف">
+                  </div>
                 </button>
                 <div class="product-body">
                   <h3>گوشواره حلقه‌ای ظریف</h3>
@@ -338,12 +280,7 @@
 
               <article class="product-card" data-category="bangle" data-product-id="5">
                 <button class="product-media" type="button">
-                  <div
-                    class="product-image"
-                    role="img"
-                    data-bg="assets/product5.png"
-                    aria-label="النگوی کلاسیک"
-                  ></div>
+                  <div class="product-image" role="img" data-bg="assets/product5.png" aria-label="النگوی کلاسیک"></div>
                 </button>
                 <div class="product-body">
                   <h3>النگوی کلاسیک</h3>
@@ -355,12 +292,8 @@
 
               <article class="product-card" data-category="set" data-product-id="6">
                 <button class="product-media" type="button">
-                  <div
-                    class="product-image"
-                    role="img"
-                    data-bg="assets/product6.png"
-                    aria-label="نیم‌ست نگین‌دار لوکس"
-                  ></div>
+                  <div class="product-image" role="img" data-bg="assets/product6.png" aria-label="نیم‌ست نگین‌دار لوکس">
+                  </div>
                 </button>
                 <div class="product-body">
                   <h3>نیم‌ست نگین‌دار لوکس</h3>
@@ -372,12 +305,7 @@
 
               <article class="product-card" data-category="ring" data-product-id="7">
                 <button class="product-media" type="button">
-                  <div
-                    class="product-image"
-                    role="img"
-                    data-bg="assets/product7.png"
-                    aria-label="انگشتر طرح پیچ"
-                  ></div>
+                  <div class="product-image" role="img" data-bg="assets/product7.png" aria-label="انگشتر طرح پیچ"></div>
                 </button>
                 <div class="product-body">
                   <h3>انگشتر طرح پیچ</h3>
@@ -389,12 +317,8 @@
 
               <article class="product-card" data-category="necklace" data-product-id="8">
                 <button class="product-media" type="button">
-                  <div
-                    class="product-image"
-                    role="img"
-                    data-bg="assets/product8.png"
-                    aria-label="گردنبند زنجیری ظریف"
-                  ></div>
+                  <div class="product-image" role="img" data-bg="assets/product8.png" aria-label="گردنبند زنجیری ظریف">
+                  </div>
                 </button>
                 <div class="product-body">
                   <h3>گردنبند زنجیری ظریف</h3>
@@ -406,12 +330,8 @@
 
               <article class="product-card" data-category="set" data-product-id="9">
                 <button class="product-media" type="button">
-                  <div
-                    class="product-image"
-                    role="img"
-                    data-bg="assets/product9.png"
-                    aria-label="نیم‌ست کلاسیک طرح گل"
-                  ></div>
+                  <div class="product-image" role="img" data-bg="assets/product9.png" aria-label="نیم‌ست کلاسیک طرح گل">
+                  </div>
                 </button>
                 <div class="product-body">
                   <h3>نیم‌ست کلاسیک طرح گل</h3>
@@ -425,7 +345,6 @@
         </div>
       </section>
 
-      <!-- صفحه گالری -->
       <section id="gallery" class="page" aria-labelledby="gallery-title">
         <h1 class="page-title" id="gallery-title">گالری زرینه‌گالری</h1>
         <div class="gallery-loader" aria-hidden="true">
@@ -434,16 +353,21 @@
           <span class="loader-dot"></span>
         </div>
         <div class="gallery-grid" data-animate="fade-up" aria-live="polite">
-          <button class="gallery-item gallery-1" data-full="gallery-1" type="button" aria-label="نمایش تصویر طلا"></button>
-          <button class="gallery-item gallery-2" data-full="gallery-2" type="button" aria-label="نمایش تصویر طلا"></button>
-          <button class="gallery-item gallery-3" data-full="gallery-3" type="button" aria-label="نمایش تصویر طلا"></button>
-          <button class="gallery-item gallery-4" data-full="gallery-4" type="button" aria-label="نمایش تصویر طلا"></button>
-          <button class="gallery-item gallery-5" data-full="gallery-5" type="button" aria-label="نمایش تصویر طلا"></button>
-          <button class="gallery-item gallery-6" data-full="gallery-6" type="button" aria-label="نمایش تصویر طلا"></button>
+          <button class="gallery-item gallery-1" data-full="gallery-1" type="button"
+            aria-label="نمایش تصویر طلا"></button>
+          <button class="gallery-item gallery-2" data-full="gallery-2" type="button"
+            aria-label="نمایش تصویر طلا"></button>
+          <button class="gallery-item gallery-3" data-full="gallery-3" type="button"
+            aria-label="نمایش تصویر طلا"></button>
+          <button class="gallery-item gallery-4" data-full="gallery-4" type="button"
+            aria-label="نمایش تصویر طلا"></button>
+          <button class="gallery-item gallery-5" data-full="gallery-5" type="button"
+            aria-label="نمایش تصویر طلا"></button>
+          <button class="gallery-item gallery-6" data-full="gallery-6" type="button"
+            aria-label="نمایش تصویر طلا"></button>
         </div>
       </section>
 
-      <!-- صفحه خدمات -->
       <section id="services" class="page" aria-labelledby="services-title">
         <h1 class="page-title" id="services-title">خدمات زرینه‌گالری</h1>
         <div class="services-grid" data-animate="fade-up">
@@ -461,33 +385,37 @@
           </article>
           <article class="service-card">
             <h2>بازسازی و پولیش تخصصی طلا</h2>
-            <p>احیای زیبایی طلاهای قدیمی و آسیب‌دیده با بازسازی و پولیش حرفه‌ای، برای بازگرداندن درخشندگی و ظاهری نزدیک به روز اول.</p>
+            <p>احیای زیبایی طلاهای قدیمی و آسیب‌دیده با بازسازی و پولیش حرفه‌ای، برای بازگرداندن درخشندگی و ظاهری نزدیک
+              به روز اول.</p>
           </article>
           <article class="service-card">
             <h2>طراحی اختصاصی جواهرات</h2>
-            <p>طراحی و ساخت جواهرات منحصربه‌فرد بر اساس سلیقه و خواست شما؛ از ایده‌پردازی اولیه تا اجرای دقیق و نهایی.</p>
+            <p>طراحی و ساخت جواهرات منحصربه‌فرد بر اساس سلیقه و خواست شما؛ از ایده‌پردازی اولیه تا اجرای دقیق و نهایی.
+            </p>
           </article>
           <article class="service-card">
             <h2>خرید و فروش طلای دست دوم</h2>
-            <p>خرید و فروش طلای دست دوم با قیمت‌گذاری منصفانه و شفافیت کامل در وزن، عیار و محاسبه قیمت، با اطمینان و اعتماد کامل.</p>
+            <p>خرید و فروش طلای دست دوم با قیمت‌گذاری منصفانه و شفافیت کامل در وزن، عیار و محاسبه قیمت، با اطمینان و
+              اعتماد کامل.</p>
           </article>
         </div>
       </section>
 
-      <!-- صفحه درباره ما -->
       <section id="about" class="page" aria-labelledby="about-title">
         <h1 class="page-title" id="about-title">درباره زرینه‌گالری</h1>
         <div class="about-content" data-animate="fade-up">
           <p>
-            زرینه‌گالری با بیش از ده سال تجربه در زمینه فروش زیورآلات طلا، فعالیت خود را با هدف ارائه محصولاتی باکیفیت، اصیل و ماندگار آغاز کرده است.
+            زرینه‌گالری با بیش از ده سال تجربه در زمینه فروش زیورآلات طلا، فعالیت خود را با هدف ارائه محصولاتی باکیفیت،
+            اصیل و ماندگار آغاز کرده است.
             ما بر این باوریم که طلا تنها یک زیور نیست، بلکه نشانه‌ای از سلیقه، هویت و احساس ارزشمندی است.
           </p>
           <p>
-           از همین رو، همواره تلاش کرده‌ایم مجموعه‌ای متنوع و به‌روز متناسب با سلیقه‌های مختلف ارائه دهیم.
+            از همین رو، همواره تلاش کرده‌ایم مجموعه‌ای متنوع و به‌روز متناسب با سلیقه‌های مختلف ارائه دهیم.
           </p>
           <p>
-            در زرینه‌گالری، کیفیت ساخت و اصالت کالا در اولویت قرار دارد و تمامی محصولات با دقت و حساسیت بالا انتخاب می‌شوند.  
-            هدف اصلی ما ایجاد حس اعتماد، آرامش و رضایت کامل برای مشتریان است.   
+            در زرینه‌گالری، کیفیت ساخت و اصالت کالا در اولویت قرار دارد و تمامی محصولات با دقت و حساسیت بالا انتخاب
+            می‌شوند.
+            هدف اصلی ما ایجاد حس اعتماد، آرامش و رضایت کامل برای مشتریان است.
             ما به شفافیت در قیمت‌گذاری، وزن و عیار طلا پایبند هستیم و صداقت را اساس کار خود می‌دانیم.
           </p>
           <p>
@@ -495,16 +423,16 @@
           </p>
           <p>
             این تیم با در نظر گرفتن سبک شخصی، نیاز و بودجه شما، مناسب‌ترین پیشنهادها را ارائه می‌دهد.
-            ما به ارتباط صمیمانه با مشتریان اهمیت می‌دهیم و تجربه‌ای دلنشین از خرید را برای شما فراهم می‌کنیم. 
+            ما به ارتباط صمیمانه با مشتریان اهمیت می‌دهیم و تجربه‌ای دلنشین از خرید را برای شما فراهم می‌کنیم.
           </p>
           <p>
-            زرینه‌گالری همواره در تلاش است با بهره‌گیری از طراحی‌های اختصاصی و خدمات حرفه‌ای، استانداردی متفاوت در صنعت طلا ارائه دهد.
+            زرینه‌گالری همواره در تلاش است با بهره‌گیری از طراحی‌های اختصاصی و خدمات حرفه‌ای، استانداردی متفاوت در صنعت
+            طلا ارائه دهد.
             اعتماد شما سرمایه ماست و افتخار می‌کنیم که همراه لحظات ارزشمند زندگی‌تان هستیم.
           </p>
         </div>
       </section>
 
-      <!-- صفحه تماس با ما -->
       <section id="contact" class="page" aria-labelledby="contact-title">
         <h1 class="page-title" id="contact-title">تماس با زرینه‌گالری</h1>
         <div class="contact-layout" data-animate="fade-up">
@@ -532,10 +460,7 @@
               <p><strong>ساعت کاری:</strong> همه‌روزه بجز جمعه، ۱۰ تا ۲۰</p>
             </div>
             <div class="map-wrapper" aria-label="نمایش نقشه">
-              <iframe
-                title="موقعیت زرینه‌گالری روی نقشه"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+              <iframe title="موقعیت زرینه‌گالری روی نقشه" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.146082085464!2d51.40434331526949!3d35.715298580186776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e012e9c14a4f3%3A0x1c4bdc90c515a1ef!2sTehran!5e0!3m2!1sen!2sir!4v1700000000000">
               </iframe>
             </div>
@@ -543,7 +468,6 @@
         </div>
       </section>
 
-      <!-- صفحه سبد خرید -->
       <section id="cart" class="page" aria-labelledby="cart-title">
         <h1 class="page-title" id="cart-title">سبد خرید</h1>
         <div class="cart-content" data-animate="fade-up">
@@ -564,16 +488,13 @@
       </section>
     </main>
 
-    <!-- لایت‌باکس گالری -->
     <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="نمایش تصویر گالری">
       <button class="lightbox-close" id="lightbox-close" type="button" aria-label="بستن">×</button>
       <div class="lightbox-image" id="lightbox-image"></div>
     </div>
 
-    <!-- Toast پیام‌ها -->
     <div class="toast-container" aria-live="polite" aria-atomic="true"></div>
 
-    <!-- فوتر جدید و لوکس -->
     <footer class="main-footer" role="contentinfo">
       <div class="footer-inner">
         <section class="footer-section footer-brand" aria-label="لوگو و معرفی کوتاه">
@@ -619,16 +540,20 @@
           </ul>
           <div class="footer-social" aria-label="شبکه‌های اجتماعی">
             <button type="button" class="social-icon" aria-label="اینستاگرام">
-              <span aria-hidden="true"><a href="https://www.instagram.com/abolfazl_shadrouh?igsh=NW1pZXFjbWpjazl0" target="_blank" class="social-btn"><i class="fab fa-instagram" style="color: white;"></i></a></span>
+              <span aria-hidden="true"><a href="https://www.instagram.com/abolfazl_shadrouh?igsh=NW1pZXFjbWpjazl0"
+                  target="_blank" class="social-btn"><i class="fab fa-instagram" style="color: white;"></i></a></span>
             </button>
             <button type="button" class="social-icon" aria-label="تلگرام">
-              <span aria-hidden="true"><a href="https://t.me/shadrouh" target="_blank" class="social-btn"><i class="fab fa-telegram-plane" style="color: white;"></i></a></span>
+              <span aria-hidden="true"><a href="https://t.me/shadrouh" target="_blank" class="social-btn"><i
+                    class="fab fa-telegram-plane" style="color: white;"></i></a></span>
             </button>
             <button type="button" class="social-icon" aria-label="فیسبوک">
-              <span aria-hidden="true"><a href="https://www.facebook.com/abolfazl.shadrooh/" target="_blank" class="social-btn"><i class="fab fa-facebook-f" style="color: white;"></i></a></span>
-            </button>     
+              <span aria-hidden="true"><a href="https://www.facebook.com/abolfazl.shadrooh/" target="_blank"
+                  class="social-btn"><i class="fab fa-facebook-f" style="color: white;"></i></a></span>
+            </button>
             <button type="button" class="social-icon" aria-label="وب‌سایت">
-              <span aria-hidden="true"><a href="https://shadrouh.ir/" target="_blank" class="social-btn"><i class="fas fa-globe" style="color: white;"></i></a></span>
+              <span aria-hidden="true"><a href="https://shadrouh.ir/" target="_blank" class="social-btn"><i
+                    class="fas fa-globe" style="color: white;"></i></a></span>
             </button>
           </div>
         </section>
@@ -637,17 +562,17 @@
       <div class="footer-divider"></div>
 
       <div class="footer-bottom">
-      <p class="copyright" dir="ltr">
-        Designed & Developed by 
-        <a href="https://shadrouh.ir/" target="_blank" class="animated-name">Abolfazl Shadrouh</a>
-          </p>
-          <p>پروژه ناتمام (درحال توسئه و بهینه سازی)</p>
+        <p class="copyright" dir="ltr">
+          Designed & Developed by
+          <a href="https://shadrouh.ir/" target="_blank" class="animated-name">Abolfazl Shadrouh</a>
+        </p>
+        <p>پروژه ناتمام (درحال توسئه و بهینه سازی)</p>
       </div>
     </footer>
   </div>
 
   <script type="module" src="script.js"></script>
-  <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script> 
+  <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
 </body>
-</html>
 
+</html>
